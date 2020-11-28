@@ -1,0 +1,32 @@
+.main-nav {
+  background-color: @navy-basic;
+
+  &__list {
+    .none-indent;
+  }
+
+  &__list-item {
+    margin-bottom: 1px;
+    width: 100%;
+    height: 55px;
+    background-color: @blue-basic;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  &__list-link {
+    .none-text-decor;
+    color: @white-basic;
+    width: 100%;
+    .font-var(18px, 40px, 700);
+  }
+
+  &__sandwich-button {
+    position: absolute;
+  }
+
+  &__close-button {
+    position: absolute;
+  }
+}
