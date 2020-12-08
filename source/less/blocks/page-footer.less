@@ -3,3 +3,14 @@
   padding-top: 38px;
   padding-bottom: 34px;
 }
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
