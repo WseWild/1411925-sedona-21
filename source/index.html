@@ -8,7 +8,7 @@
   </head>
   <body class="page-body">
 
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="main-nav">
         <button class="main-nav__sandwich-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -46,7 +46,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <section class="index-intro">
         <h1 class="visually-hidden">Седона</h1>
           <ul class="index-intro__list">
@@ -128,29 +128,27 @@
                 <img class="reasons-item-two__foto" src="img/photo-bridge.jpg" alt="Фотография моста дьявола" width="320" height="260">
               </div>
             </li>
-            <div class="reasons-item__wrap">
-              <li class="reasons-item-three">
-                <h3 class="reasons-item-three__title reasons__list-title">Небольшая площадь</h3>
-                <p class="reasons-item-three__number reasons__list-number">— №3 —</p>
-                <p class="reasons-item-three__description">
-                  Все интересные места находятся очень близко
-                </p>
-              </li>
-              <li class="reasons-item-four">
-                <h3 class="reasons-item-four__title reasons__list-title">Красивая дорога</h3>
-                <p class="reasons-item-four__number reasons__list-number">— №4 —</p>
-                <p class="reasons-item-four__description">
-                  Ехать в Седону и из Лас-Вегаса совсем не скучно!
-                </p>
-              </li>
-              <li class="reasons-item-five">
-                <h3 class="reasons-item-five__title reasons__list-title">Мало туристов</h3>
-                <p class="reasons-item-five__number reasons__list-number">— №5 —</p>
-                <p class="reasons-item-five__description">
-                  Большинство едет в гранд каньон и толпится там
-                </p>
-              </li>
-            </div>
+            <li class="reasons-item-three">
+              <h3 class="reasons-item-three__title reasons__list-title">Небольшая площадь</h3>
+              <p class="reasons-item-three__number reasons__list-number">— №3 —</p>
+              <p class="reasons-item-three__description">
+                Все интересные места находятся очень близко
+              </p>
+            </li>
+            <li class="reasons-item-four">
+              <h3 class="reasons-item-four__title reasons__list-title">Красивая дорога</h3>
+              <p class="reasons-item-four__number reasons__list-number">— №4 —</p>
+              <p class="reasons-item-four__description">
+                Ехать в Седону и из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+            <li class="reasons-item-five">
+              <h3 class="reasons-item-five__title reasons__list-title">Мало туристов</h3>
+              <p class="reasons-item-five__number reasons__list-number">— №5 —</p>
+              <p class="reasons-item-five__description">
+                Большинство едет в гранд каньон и толпится там
+              </p>
+            </li>
           </ul>
       </section>
       <section class="hotel-search">
@@ -166,11 +164,13 @@
             Найти гостиницу
           </a>
         </div>
-        <img class="map-pic" src="img/map-pic.png" alt="Изображение карты" width="320" height="350">
+        <div class="map-pic">
+          <img class="map-pic" src="img/map-pic.png" alt="Изображение карты" width="320" height="350">
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__hashtag">
         <b>
           #visitsedona
