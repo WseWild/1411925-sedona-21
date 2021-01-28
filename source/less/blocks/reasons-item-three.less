@@ -1,18 +1,43 @@
 .reasons-item-three {
   .reasons-item-style;
   border-bottom: 1px  solid @grey-middle-second;
-}
 
-@media (min-width: @tablet-width) {
-  .reasons-item-three {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
     width: 256px;
     padding-right: 0;
     padding-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  .reasons-item-three {
-    width: 400px;
+.reasons-item-three__title {
+  @media (min-width: @tablet-width) {
+    padding-top: 16px;
+    padding-left: 25px;
+    padding-right: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+.reasons-item-three__description {
+  @media (min-width: @tablet-width) {
+    padding-left: 24px;
+    padding-right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

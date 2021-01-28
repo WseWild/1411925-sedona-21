@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <!-- pixelglass -->
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/index-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/index-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/index-desktop.png" );
+        }
+      }
+
+      BODY {
+        opacity: 0.7;
+        /* filter: invert(100%); */
+      }
+      }
+    </style>
+    <!--  -->
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
@@ -10,15 +44,15 @@
 
     <header class="page-header container">
       <nav class="main-nav">
-        <button class="main-nav__sandwich-button" type="button">
+        <button class="main-nav__sandwich-button visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <button class="main-nav__close-button" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__main">
-            <a class="main-nav__list-link">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link main-nav__list-link--active">
               Главная
             </a>
           </li>
@@ -27,12 +61,12 @@
               Фото и видео
             </a>
           </li>
-          <li class="main-nav__list-item main-nav__revocation-form">
+          <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="form.html">
               Форма отзыва
             </a>
           </li>
-          <li class="main-nav__list-item main-nav__academy">
+          <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="#">
               HTML Academy
             </a>
@@ -58,7 +92,7 @@
             <li class="index-intro__list-item">
               <img class="index-intro__gorgeus"
                   src="img/text_gorgeous.svg"
-                  width="106" height="18" alt=" в великолепный город">
+                  width="163" height="19" alt=" в великолепный город">
             </li>
             <li class="index-intro__list-item">
 
@@ -69,7 +103,7 @@
             <li class="index-intro__list-item">
               <img class="index-intro__canyon"
                   src="img/text_because.svg"
-                  width="173" height="45" alt="Не хуже гранд-каньона">
+                  width="178" height="58" alt="Не хуже гранд-каньона">
             </li>
           </ul>
         <p class="index-intro__about">
@@ -93,24 +127,25 @@
                     Седона не аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
-                <img src="img/photo-city.jpg" alt="Фотография мотеля" width="320" height="260">
+                <div class="reasons-item-one__picture">
+                </div>
               </div>
               <ul class="reasons-item-one__sublist">
                 <li class="reasons-item-one__housing">
                   <h4 class="reasons-item-one__housing-title reasons-item-one__sublist-title">Жилье</h4>
                   <p class="reasons-item-one__housing-text reasons-item-one__sublist-text">
-                    Рекомендуем пожить в настоящем мотеле,все как в кино!
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </li>
                 <li class="reasons-item-one__souvenirs">
                   <h4 class="reasons-item-one__souvenirs-title reasons-item-one__sublist-title">Сувениры</h4>
                   <p class="reasons-item-one__souvenirs-text reasons-item-one__sublist-text">
-                    Не только китайского, но и местного производства!
+                    Не только китайского,<br> но и местного производства!
                   </p>
                 </li>
                 <li class="reasons-item-one__food">
                   <h4 class="reasons-item-one__food-title reasons-item-one__sublist-title">Еда</h4>
-                  <p class="reasons-item-one__housing-text reasons-item-one__sublist-text">
+                  <p class="reasons-item-one__food-text reasons-item-one__sublist-text">
                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
@@ -119,13 +154,14 @@
             <li class="reasons-item-two">
               <div class="reasons-item-two__wrap">
                 <div class="reasons-item-two__text">
-                  <h3 class="reasons-item-two__title reasons__list-title">Там есть мост дьявола</h3>
+                  <h3 class="reasons-item-two__title reasons__list-title">Там есть<br> мост дьявола</h3>
                   <p class="reasons-item-two__number reasons__list-number">— №2 —</p>
                   <p class="reasons-item-two__description">
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img class="reasons-item-two__foto" src="img/photo-bridge.jpg" alt="Фотография моста дьявола" width="320" height="260">
+                <div class="reasons-item-two__picture">
+                </div>
               </div>
             </li>
             <li class="reasons-item-three">
@@ -139,7 +175,7 @@
               <h3 class="reasons-item-four__title reasons__list-title">Красивая дорога</h3>
               <p class="reasons-item-four__number reasons__list-number">— №4 —</p>
               <p class="reasons-item-four__description">
-                Ехать в Седону и из Лас-Вегаса совсем не скучно!
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class="reasons-item-five">
@@ -157,7 +193,7 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <h3 class="hotel-search__title">Заинтересовались?</h3>
           <p class="hotel-search__text">
-            Укажите предпологаемые даты поездки,
+            Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
           <a class="hotel-search__button" href="#">
@@ -165,7 +201,6 @@
           </a>
         </div>
         <div class="map-pic">
-          <img class="map-pic" src="img/map-pic.png" alt="Изображение карты" width="320" height="350">
         </div>
       </section>
     </main>

@@ -1,5 +1,22 @@
 .reasons-intro {
+  .none-indent;
   .font-var(14px, 26px);
   padding-left: 25px;
   padding-right: 25px;
+  position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -73px;
+    border: 320px solid transparent;
+    border-left: 29px solid @white-basic;
+    transform: rotate(90deg);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
